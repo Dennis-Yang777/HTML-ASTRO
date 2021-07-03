@@ -7,25 +7,11 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="normalize.css">
 	<style>
-		a.class{
-			text-decoration: none;
-			border: solid 1px red;
-			border-radius: 8%;
-			margin: 0px 5px;
-		}
-		
-		span{
-			color: red;
-		}
-		.web{
+		.web_body{
 			width: 100%;
 			background-color: rgb(248, 248, 248);
 		}
-
-
-		.nav{
-			display: flex;
-		}
+/*  */
 		.navhead{
 			margin-top: 5px;
 		} /* 要寫才能對齊 */
@@ -33,49 +19,24 @@
 			display: flex;
 			margin-left: auto;
 		}
-
-
-		.item,.reporter,.more{
+/*  */
+		.item,.report_title,.more{
 			margin: 5px 20px;
 			text-align: center;
 		}
-
-		.advantage,.cheer,.teachercontent,.teacher,.lesson{
+/*  */
+		.box{
 			display: flex;
 			justify-content: center;
 		}
+		.advantage,.teacher,.report_title,.news_box,.more{
+			margin-top: 50px;
+		}
+		.cheer,.teacher_content{
+			margin-top: 100px;
+		}
+/*  */
 		
-
-		.more a{
-			background-color: rgb(255, 20, 54);
-			border-radius: 8%;
-			color: white;
-			text-decoration: none;
-			font-size: 30px;
-			padding: 20px 20px 20px 20px;
-		}
-
-
-		.news{
-			display: flex;
-			justify-content: center;
-		}
-		.report{
-			width: 500px;
-			margin: 0 80px 0 80px;
-		}
-		.report h1{
-			text-decoration: none;
-			color: black;
-			text-decoration: none;
-		}
-		.report a{
-			text-decoration: none;
-			color: black;
-			font-size: 18px;
-		}
-
-
 		.file{
 			width: 500px;
 			margin-left: 50px;
@@ -88,12 +49,42 @@
 		.name img{
 			border-radius: 50%;
 		}
+		a.class{
+			text-decoration: none;
+			border: solid 1px red;
+			border-radius: 8%;
+			margin: 0px 5px;
+		}
+		span{
+			color: red;
+		}
+/*  */
+		.more a{
+			background-color: rgb(255, 20, 54);
+			border-radius: 8%;
+			color: white;
+			text-decoration: none;
+			font-size: 30px;
+			padding: 20px 20px 20px 20px;
+		}
+/*  */
+		.report{
+			width: 500px;
+			margin: 0 80px 0 80px;
+		}
+		.report a{
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+		}
+/*  */
+
 
 	</style>
 </head>
 <body>
-	<div class="web">
-		<div class="nav">
+	<div class="web_body">
+		<div class="box nav">
 			<div class="navhead">
 				<div class="item">
 					<p>{ruby}五倍紅寶石。專業程式教育機構</p>
@@ -120,19 +111,19 @@
 				</div>
 			</div>
 		</div>
-
+<!--  -->
 		<div class="banner">
 			<img src="https://picsum.photos/1440/500?random=10" alt="" style="width: 100%;">
 		</div>
-
-		<div class="cheer" style="margin-top: 100px;">
+<!--  -->
+		<div class="box cheer">
 			<div>
 				<h2>不只停留在教你釣魚，更引領你乘風破浪</h2>
 				<p>我們不藏私的教學，讓所有人都能發揮超越五倍的價值</p>
 			</div>
 		</div>
-		
-		<div class="advantage" style="margin-top: 50px;">
+<!--  -->
+		<div class="box advantage">
 			<div class="item">
 				<div class="pic">
 					<img src="https://picsum.photos/300/200?random=11" alt="">
@@ -161,8 +152,8 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="teachercontent" style="margin-top: 100px;">
+<!--  -->
+		<div class=" box teacher_content">
 			<div>
 				<div>
 					<h2>講師陣容</h2>
@@ -172,8 +163,8 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="teacher" style="display: flex; margin-top: 50px;">
+<!--  -->
+		<div class="box teacher">
 			<div class="file">
 				<div class="card">
 					<div class="name">
@@ -217,7 +208,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="teacher" style="display: flex; margin-top: 50px;">
+		<div class="box teacher">
 			<div class="file">
 				<div class="card">
 					<div class="name">
@@ -260,13 +251,13 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="reporter" style="margin-top: 50px;">
+<!--  -->
+		<div class="report_title">
 			<h1>媒體報導</h1>
 		</div>
-
-		<div style="margin-top: 50px;">
-			<div class="news">
+<!--  -->
+		<div class="news_box">
+			<div class="box news">
 				<div class="report">
 					<a href="">想當高薪工程師 備妥三大關鍵能力求職更順暢</a>
 					<p>中時新聞網・2021/01</p>
@@ -276,7 +267,7 @@
 					<p>EnglishOK・2020/03</p>
 				</div>
 			</div>
-			<div class="news">
+			<div class="box news">
 				<div class="report">
 					<a href="">教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是<br>營養系出身！</a>
 					<p>天下雜誌・2020/02</p>
@@ -286,7 +277,7 @@
 					<p>天下雜誌・2020/01</p>
 				</div>
 			</div>
-			<div class="news">
+			<div class="box news">
 				<div class="report">
 					<a href="">勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo<br> Day</a>
 					<p>INSIDE・2019/07</p>
@@ -297,11 +288,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="more" style="margin-top: 50px;">
+		<!--  -->
+		<div class="more">
 				<a href="">更多報導</a>
 		</div>
-
-		<div class="lesson">
+<!--  -->
+		<div class="box lesson">
 			<div>
 				<div>
 					<h1>短期實體課程</h1>
@@ -345,6 +337,7 @@
 				<a href="">看更多課程</a>
 			</div>
 		</div>
+<!--  -->
 	</div>
 
 
