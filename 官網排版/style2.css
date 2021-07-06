@@ -1,16 +1,18 @@
+p{
+	margin: 0;
+	line-height: 1.4rem;
+}
+/* web body */
 .web{
-	width: 1440px;
+	width: 100%;
+	max-width: 1440px;
 	height: 100%;
 	margin: auto;
-	border-left: solid 1px;
-	border-right: solid 1px;
 }
+/* for flex */
 .section{
 	display: flex;
 	flex-wrap: wrap;
-}
-.content{
-	margin: 20px 10px;
 }
 /* ===================================================== */
 .navbar{
@@ -18,30 +20,48 @@
 	justify-content: flex-end;
 }
 .navbar .home{
-	flex-grow: 1;
+	margin-right: auto;
+}
+.navbar_title{
+	margin: 1.2rem 0.8rem;
 }
 .navbar a{
 	text-decoration: none;
 	color: black;
 }
+
 /* ====================================================== */
 .banner{
-	height: 550px;
+	height: 400px;
 	background-color: rgb(41, 46, 56);
+	margin-bottom: 10rem;
+}
+.banner::after{
+	margin-top: 3.5rem;
+	width: 0;
+	height: 0;
+	display: block;
+	content: '';
+	border-top: rgb(41, 47, 56) solid 100px;
+	border-left: transparent 480px solid;
+	border-right: transparent 960px solid;
+
 }
 .banner_title{
 	color: white;
-	margin-left: 400px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .banner h1{
 	font-size: 40px;
-	margin-top: 100px;
+	margin-top: 8rem;
 }
 .banner a{
 	display: inline-block;
-	margin-top: 100px;
+	width: 4rem;
+	margin-top: 2rem;
 	background-color: red;
-	padding: 20px;
+	padding: 1rem;
 	border: 1px solid red;
 	text-decoration: none;
 	border-radius: 5px;
@@ -50,10 +70,118 @@
 /* ========================================================= */
 .value{
 	text-align: center;
-	margin-top: 50px;
-	justify-content: space-evenly;
+	margin: 3.5rem 0;
 }
-/* ========================================================= */
-.value .content{
+.value span::after{
+	content: '魚，';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.content{
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+}
 
+/* ========================================================= */
+.teacher{
+	justify-content: center;
+	background-color: rgb(248, 249, 250);
 }
+.teacher::before{
+	width: 0;
+	height: 0;
+	content: '';
+	display: block;
+	border-right: solid 960px transparent;
+	border-left: solid 480px transparent;
+	border-bottom: solid 150px rgb(248, 249, 250);
+	background-color: white;
+}
+.teacher_title{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	width: 66.66%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.teacher_title h2{
+	font-size: 2rem;
+}
+.teacher_title h2::before{
+	content: '講師';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.teacher_title h4{
+	font-size: 1.25rem;
+}
+/* ============================================================= */
+.teacher_card{
+	border: solid 1px white;
+	background-color: white;
+	width: 50%;
+	max-width: 620px;
+	margin: 1rem;
+}
+.name{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2rem;
+	align-items: center;
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 2rem;
+}
+.teacher_card .item{
+	margin-left: 1rem;
+}
+.teacher_card img{
+	border-radius: 50%;
+}
+.teacher_card .introduce{
+	margin: 1rem;
+}
+.teacher_card .introduce p{
+	margin-bottom: 0.7rem;
+}
+.teacher_card .introduce .else{
+	margin: 2rem 0 1.5rem 0;
+}
+.teacher_card a{
+	text-decoration: none;
+	border: solid 1px red;
+	border-radius: 5px;
+	padding: 0.5rem;
+	color: red;
+	margin-right: 0.8rem;
+}
+/* ============================================================== */
+
+.report_title{
+	text-align: center;
+	margin: 5rem 0 3rem 0;
+}
+.report_title span::after{
+	content: '體報';
+	border-bottom: 3px solid red;
+	padding-bottom: 0.5rem;
+}
+.report_body{
+	justify-content: center;
+}
+.blog{
+	width: 50%;
+	max-width: 620px;
+	margin: 1rem;
+}
+.news{
+	height: 120px;
+}
+.blog a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	margin-bottom: 1rem;
+}
+
