@@ -3,7 +3,9 @@
 		font-family: sans-serif;
 		/* 字型 */
 		font-size: 1em;
-		/* 相對大小 */
+		/* 相對父層大小 */
+		font-size: 1rem;
+		/* 相對跟元素大小 */
 		font-weight: bold;
 		/* 文字粗細 */
 		font-style: italic;
