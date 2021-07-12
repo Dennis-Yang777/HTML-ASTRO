@@ -46,6 +46,12 @@ p{
 .navbar{
 	font-size: 20px;
 	justify-content: flex-end;
+	width: 1440px;
+	background-color: white;
+	position: sticky;
+	top: 0;
+	margin: auto;
+
 }
 .navbar .home{
 	margin-right: auto;
@@ -85,7 +91,6 @@ p{
 }
 .banner a{
 	display: inline-block;
-	width: 4rem;
 	margin-top: 2rem;
 	background-color: red;
 	padding: 0.8rem 2rem;

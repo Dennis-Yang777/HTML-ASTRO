@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		.box{
+			width: 500px;
+			height: 500px;
+			margin: 0 auto;
+		}
+
+		.header{
+			width: 220px;
+			background: #ccc;
+			position: relative;
+			top: 55%;
+			left: -25%;
+		}
+			.title{
+				display: flex;
+				background: red;
+				color: white;
+				padding: 10px 0;
+				align-items: center;
+			}
+			.title .num{
+				writing-mode: vertical-lr;
+				font-size: 70px;
+			}
+			.header .content{
+				background: black;
+				color: white;
+				padding: 10px 10px 20px;
+				font-size: 13px;
+			}
+
+			.pic::before{
+			content: '';
+			width: 250px;
+			height: 150px;
+			background-color: #eee;
+			display: block;
+
+			position: relative;
+			z-index: -1;
+			top: 80px;
+			left: 40%;
+			}
+
+		.pic{
+			position: relative;
+			z-index: -1;
+		}
+		.pic .flag{
+			width: 40px;
+			height: 30px;
+			background: red;
+			position: absolute;
+			top: 65%;
+			right: 18%;
+		}
+		.flag::after{
+			content: '';
+			width: 0;
+			height: 0;
+			position: absolute;
+			border-top: solid transparent 10px;
+			border-left: solid white 15px;
+			border-bottom: solid transparent 10px;
+			top: 20%;
+			left: 40%;
+		}
+
+		.intro{
+			width: 400px;
+			background: #ccc;
+			font-size: 10px;
+			position: relative;
+			bottom: 20px;
+			right: 15%;
+		}
+		.intro h3{
+			width: 20%;
+			background: black;
+			color: white;
+			text-align: center;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="header">
+			<div class="title">
+				<h1 class="num">01</h1>
+				<h1>操控樂趣</h1>
+			</div>
+			<div class="content">
+				<h3>人人滿意的駕駛體驗</h3>
+				<p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行使快感。</p>
+			</div>
+		</div>
+		<div class="pic">
+			<img src="https://picsum.photos/400/250?random=10" alt="">
+			<div class="flag"></div>
+		</div>
+		<div class="intro">
+			<p class="redp">因為我們做了這些革新</p>
+			<h3>低重心設計</h3>
+			<p>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側頭，保持高速行駛穩定性。</p>
+			<h3>車體剛性增強</h3>
+			<p>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化和接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</p>
+			<h3>四輪獨立懸吊</h3>
+			<p>搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提駕馭樂趣。</p>
+		</div>
+	</div>
+	<div class="box">
+		<div class="header">
+			<div class="title">
+				<h1 class="num">01</h1>
+				<h1>操控樂趣</h1>
+			</div>
+			<div class="content">
+				<h3>人人滿意的駕駛體驗</h3>
+				<p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行使快感。</p>
+			</div>
+		</div>
+		<div class="pic">
+			<img src="https://picsum.photos/400/250?random=10" alt="">
+			<div class="flag"></div>
+		</div>
+		<div class="intro">
+			<p class="redp">因為我們做了這些革新</p>
+			<h3>低重心設計</h3>
+			<p>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側頭，保持高速行駛穩定性。</p>
+			<h3>車體剛性增強</h3>
+			<p>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化和接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</p>
+			<h3>四輪獨立懸吊</h3>
+			<p>搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提駕馭樂趣。</p>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>
