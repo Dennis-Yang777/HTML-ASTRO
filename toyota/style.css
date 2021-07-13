@@ -15,14 +15,14 @@
 	width: 220px;
 	z-index: 3;
 	position: relative;
-	top: 126px;
+	top: 125px;
 	left: -30%;
 }
 .header_reverse{
 	width: 220px;
 	z-index: 3;
 	position: relative;
-	top: 126px;
+	top: 125px;
 	right: -30%;
 }
 .title{
@@ -83,7 +83,7 @@
 	top: 45%;
 	left: -1.5%;
 }
-.flag2::after{
+.flag_reverse::after{
 	content: '';
 	width: 0;
 	height: 0;
@@ -113,7 +113,8 @@
 	top: -18px;
 	left: -8%;
 }
-.intro p{
+.intro p,
+.intro_reverse p{
 	margin-bottom: 6px;
 }
 .intro h3,
