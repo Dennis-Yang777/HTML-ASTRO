@@ -22,8 +22,8 @@
 			font-size: 35px;
 			padding: 20px;
 			position: fixed;
-			top: 1em;
-			right: 10.7em;
+			top: 2em;
+			right: 3vw;
 			background-color: #eee;
 			border-radius: 50%;
 			box-shadow: 6px 10px 20px rgba(87, 85, 85, 0.3);
@@ -125,9 +125,55 @@
 		}
 		.banner img{
 			width: 42%;
-			display: block;
 			margin: -2rem 4rem 0 0;
 		}
+/* //////////////////////////////// */
+		.about_us{
+			width: var(--web_size);
+			display: flex;
+			justify-content: center;
+			padding-top: 6rem;
+		}
+		.about_us img{
+			width: 33%;
+		}
+		.about_us .name p{
+			padding: 0.6rem 2rem 0.5rem 1rem;
+			border: solid #ccc 3px;
+			font-size: 18px;
+			position: relative;
+			left: -50%;
+			top: 30%;
+		}
+		.about_us .name p::before{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: solid 12px white;
+			border-bottom: solid 12px transparent;
+			position: absolute;
+			bottom: -12px;
+			left: 13px;
+			z-index: 1;
+		}
+		.about_us .name p::after{
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: solid 20px #ccc;
+			border-bottom: solid 20px transparent;
+			position: absolute;
+			bottom: -20px;
+			left: 10px;
+		}
+		.about_us .about_txt{
+			width: 40%;
+			border: solid red 1px;
+		}
+		.about_us .about_txt h1{}
+		.about_us .about_txt h3{}
+		.about_us .about_txt p{}
+		.about_us .about_txt a{}
 
 	</style>
 </head>
@@ -160,9 +206,13 @@
 			<img src="/food/pic/slider-03-671x671.png" alt="">
 		</div>
 		<div class="about_us">
+			<img src="/food/pic/home-01-455x685.png" alt="">
+			<div class="name">
+				<p>Julie Fox<br>Head Chef</p>
+			</div>
 			<div class="about_txt">
-				<h3>ABOUT US</h3>
 				<h1>HEALTHY FOOD CAN BE DELICIOUS</h1>
+				<h3>ABOUT US</h3>
 				<p>Plate was established in 2013, as a reliable food service provider where anyone could order healthy food they like.</p>
 				<p>Choose gluten-free meals from our menu</p>
 				<p>The freshest ingredients for every dish</p>
