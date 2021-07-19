@@ -6,238 +6,327 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/food/food.css">
+	<link rel="stylesheet" href="floor.css">
 	<style>
-
-
-		.footer{
-			width: var(--web_size);
-			display: flex;
-			flex-wrap: wrap;
-			padding: 5rem 0;
-			background-color: #ddd;
-		}
-		.footer a{
-			display: inline-block;
-		}
-		.footer .footer_title{
-			width: 25%;
-		}
-		.footer .footer_body{
-			width: 75%;
-			display: flex;
-			flex-wrap: wrap;
-		}
-		.footer .footer_body .food_content{
-			width: 30%;
-		}
-		.footer .icon{
+		.what-we-offer{
 			width: 100%;
+			background-color: rgb(102, 175, 84);
+			display: flex;
+			justify-content: center;
+			padding: 100px 0;
 		}
-		.footer .icon a{
-			font-size: 30px;
-			border: solid 1px #777;
-			border-radius: 50%;
-			padding: 0.5rem;
+		.what-we-offer .offer{
+			max-width: 1200px;
 		}
-		.footer .icon a:nth-child(1){
-			color: blue;
+		.what-we-offer .offer-title{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
 		}
-		.footer .icon a:nth-child(2){
-			color: #444;
+		.what-we-offer .offer-title h1{
+			color: white;
+			padding-bottom: 4rem;
+			font-size: 40px;
 		}
-		.footer .icon a:nth-child(3){
-			color: red;
+		.what-we-offer .offer-title p{
+			color: #ddd;
+			order: -1;
+			padding-bottom: 2rem;
 		}
-		.footer{}
-		.footer{}
+		.what-we-offer .meal{
+			display: flex;
+			justify-content: center;
+		}
+		.what-we-offer .meal .meal-card{
+			width: 22%;
+			margin: 0 auto;
+			padding: 3rem 2rem 4rem;
+			background-color: #eee;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 70px;
+			border-bottom-left-radius: 70px;
+			border-bottom-right-radius: 70px;
+		}
+		.what-we-offer .meal .meal-card-head{
+			display: flex;
+		}
+		.what-we-offer .meal .meal-card-head .card-head-txt{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+		}
+		.what-we-offer .meal .meal-card-head .card-head-txt h3{
+			padding-bottom: 1rem;
+		}
+		.what-we-offer .meal .meal-card-head .card-head-txt p{
+			padding-left: 1rem;
+		}
+		.what-we-offer .meal .meal-card-head .card-head-txt .price{
+			font-size: 60px;
+		}
+		.what-we-offer .meal .meal-card-head .card-head-pic{
+			width: 50%;
+			position: relative;
+			top: -5rem;
+			right: -1rem;
+		}
+		.what-we-offer .meal .meal-card-body p{
+			line-height: 1.5em;
+		}
+		.what-we-offer .meal .meal-card-body .order{
+			display: inline-block;
+			padding: 1rem 3rem;
+			margin: 3rem 0;
+			background-color: rgb(102, 175, 84);
+			color: white;
+			font-size: 18px;
+			text-decoration: none;
+			border-radius: 30px;
+			text-align: center;
+			box-shadow: 0px 5px 0px rgb(76, 131, 63);
+			transition: 1s;
+		}
+		.what-we-offer .meal .meal-card-body .order:hover{
+			background-color: rgb(29, 42, 52);
+			box-shadow: 0px 5px 0px rgb(29, 42, 52);
+		}
+		.what-we-offer .meal .meal-card-body .menu{
+			display: inline-block;
+			color: black;
+			text-decoration: none;
+			position: relative;
+			transition: 1s;
+		}
+		.what-we-offer .meal .meal-card-body .menu:hover{
+			color: rgb(104, 176, 87);
+		}
+		.what-we-offer .meal .meal-card-body .menu:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: black;
+			position: absolute;
+			bottom: -0.5rem;
+		}
+
 
 	</style>
 </head>
 <body>
-	<section class="wrap">
-		<p class="pen"><i class="fas fa-pencil-alt"></i></p>
-		<div class="navbar">
-			<div class="home">
-				<a href="#"><img src="/food/pic/logo-inverse-269x100.png" alt="home_icon"></a>
-			</div>
-			<div class="nav_item">
-				<div><a href="#">Programs</a></div>
-				<div><a href="#">About</a></div>
-				<div><a href="#">Clients</a></div>
-			</div>
-		</div>
-		<div class="banner">
-			<div class="banner_txt">
-				<h1>DELICIOUS FOOD</h1>
-				<h3>BEST DISHES & INGREDIENTS</h3>
-				<p>Plate regularly updates the menus to make sure our customers eat the best and the tastiest food.</p>
-				<div class="flow">
-					<p>01</p>
-					<p>02</p>
-					<p>03</p>
-					<p>04</p>
+	<div class="wrap">
+		<nav class="navbar">
+			<div class="nav-box">
+				<p><i class="fas fa-list"></i></p>
+				<div class="logo">
+					<a href="#"><img src="/pic/logo-inverse-269x100.png" alt="home_icon"></a>
 				</div>
-				<p class="organic">Organic Ingredients</p>
+				<div class="nav-item">
+					<a href="#">Programs</a>
+					<a href="#">About</a>
+					<a href="#">Clients</a>
+				</div>
 			</div>
-			<img src="/food/pic/slider-03-671x671.png" alt="juice">
-		</div>
-		<div class="about_us">
-			<img src="/food/pic/home-01-455x685.png" alt="chief">
-			<div class="name">
+		</nav>
+		<header>
+			<button><i class="fas fa-pencil-alt"></i></button>
+			<button></button>
+		</header>
+		<section class="banner">
+			<div class="banner-box">
+				<div class="banner-content">
+					<h1>DELICIOUS FOOD</h1>
+					<p class="slogan">BEST DISHES & INGREDIENTS</p>
+					<p>Plate regularly updates the menus to make sure our customers eat the best and the tastiest food.</p>
+					<div class="flow">
+						<p>01</p>
+						<p>02</p>
+						<p>03</p>
+						<p>04</p>
+					</div>
+					<p class="organic">Organic Ingredients</p>
+				</div>
+				<figure class="banner-pic">
+					<img src="/pic/slider-03-671x671.png" alt="juice">
+				</figure>
+			</div>
+		</section>
+		<section class="about-us">
+			<figure>
+				<img src="/pic/home-01-455x685.png" alt="chief">
+			</figure>
+			<div class="chief-name">
 				<p>Julie Fox Head Chef</p>
 			</div>
-			<div class="about_txt">
+			<div class="about-us-content">
 				<h1>HEALTHY FOOD CAN BE DELICIOUS</h1>
-				<h3>ABOUT US</h3>
+				<p class="title">ABOUT US</p>
 				<p id="found">Plate was established in 2013, as a reliable food service provider where anyone could order healthy food they like.</p>
-				<div class="content">
+				<div class="content-txt">
 					<p>Choose gluten-free meals from our menu</p>
 					<p>The freshest ingredients for every dish</p>
 					<p>Get great discounts when ordering for 2+ people</p>
 					<a href="#">READ MORE</a>
 				</div>
 			</div>
-		</div>
-		<div class="offer">
-			<div class="offer_title">
-				<h1>FOOD PACKAGES</h1>
-				<h3>WHAT WE OFFER</h3>
+		</section>
+		<section class="what-we-offer">
+			<div class="offer">
+				<div class="offer-title">
+					<h1>FOOD PACKAGES</h1>
+					<p>WHAT WE OFFER</p>
+				</div>
+				<div class="meal">
+					<div class="meal-card">
+						<div class="meal-card-head">
+							<div class="card-head-txt">
+								<h3>DETOX</h3>
+								<p class="price">$15</p>
+								<p>PER DAY</p>
+							</div>
+							<figure class="card-head-pic">
+								<img src="/pic/product-01-176x176.png" alt="food1">
+							</figure>
+						</div>
+						<div class="meal-card-body">
+							<p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
+							<a class="order" href="#">ORDER NOW</a>
+							<a class="menu" href="#">OPEN MENU (PDF)</a>
+						</div>
+					</div>
+					<div class="meal-card">
+						<div class="meal-card-head">
+							<div class="card-head-txt">
+								<h3>BALANCED</h3>
+								<p class="price">$30</p>
+								<p>PER DAY</p>
+							</div>
+							<div class="card-head-pic">
+								<img src="/pic/product-02-176x176.png" alt="food2">
+							</div>
+						</div>
+						<div class="meal-card-body">
+							<p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
+							<a class="order" href="#">ORDER NOW</a>
+							<a class="menu" href="#">OPEN MENU (PDF)</a>
+						</div>
+					</div>
+					<div class="meal-card">
+						<div class="meal-card-head">
+							<div class="card-head-txt">
+								<h3>VEGAN</h3>
+								<p class="price">$22</p>
+								<p>PER DAY</p>
+							</div>
+							<div class="card-head-pic">
+								<img src="/pic/product-03-176x176.png" alt="food3">
+							</div>
+						</div>
+						<div class="meal-card-body">
+							<p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>
+							<a class="order" href="#">ORDER NOW</a>
+							<a class="menu" href="#">OPEN MENU (PDF)</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="meal">
-				<div class="meal_card">
-					<div class="meal_card_top">
-						<div class="card_txt">
-							<h2>$15</h2>
-							<h3>DETOX</h3>
-							<p>PER DAY</p>
-						</div>
-						<div class="card_pic">
-							<img src="/food/pic/product-01-176x176.png" alt="food1">
-						</div>
-					</div>
-					<p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
-					<a class="order" href="#">ORDER NOW</a>
-					<a class="menu" href="#">OPEN MENU (PDF)</a>
-				</div>
-				<div class="meal_card">
-					<div class="meal_card_top">
-						<div class="card_txt">
-							<h2>$30</h2>
-							<h3>BALANCED</h3>
-							<p>PER DAY</p>
-						</div>
-						<div class="card_pic">
-							<img src="/food/pic/product-02-176x176.png" alt="food2">
-						</div>
-					</div>
-					<p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>
-					<a class="order" href="#">ORDER NOW</a>
-					<a class="menu" href="#">OPEN MENU (PDF)</a>
-				</div>
-				<div class="meal_card">
-					<div class="meal_card_top">
-						<div class="card_txt">
-							<h2>$22</h2>
-							<h3>VEGAN</h3>
-							<p>PER DAY</p>
-						</div>
-						<div class="card_pic">
-							<img src="/food/pic/product-03-176x176.png" alt="food3">
-						</div>
-					</div>
-					<p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>
-					<a class="order" href="#">ORDER NOW</a>
-					<a class="menu" href="#">OPEN MENU (PDF)</a>
-				</div>
-			</div>
-		</div>
-		<div class="work">
-			<div class="work_title">
+		</section>
+		<section class="how-it-works">
+			<div class="work-title">
 				<h1>3 STEPS TO HEALTHY EATING</h1>
-				<h3>HOW IT WORKS</h3>
+				<p>HOW IT WORKS</p>
 			</div>
-			<div class="work_content">
-				<div class="work_card">
+			<div class="work-content">
+				<div class="work-card">
 					<h3>CHOOSE<br>A FOOD PACKAGE</h3>
 					<p>First, select the package that you prefer the most.</p>
 				</div>
-				<div class="work_card">
+				<div class="work-card">
 					<h3>CUSTOMIZE YOUR MENU</h3>
 					<p>After that, feel free to change and customize your menu.</p>
 				</div>
-				<div class="work_card">
+				<div class="work-card">
 					<h3>SELECT A DELIVERY ADDRESS & TIME</h3>
 					<p>Finally, let us know where and when to deliver your food.</p>
 				</div>
 			</div>
-		</div>
-		<div class="value">
-			<div class="value_txt">
-				<div class="value_txt_content">
+		</section>
+		<section class="food-value">
+			<div class="value-content">
+				<div class="value-txt">
 					<h3><i class="fas fa-gem"></i>QUALITY</h3>
 					<p>We work with the best suppliers to make sure you get the top-quality dishes, beverages, and service.</p>
 				</div>
-				<div class="value_txt_content">
+				<div class="value-txt">
 					<h3><i class="fas fa-leaf"></i>ORGANIC</h3>
 					<p>All ingredients we use are 100% organic and fresh. Such approach makes our food a lot healthier.</p>
 				</div>
-				<div class="value_txt_content">
+				<div class="value-txt">
 					<h3><i class="fas fa-hat-cowboy-side"></i>TASTY</h3>
 					<p>Great and unforgettable taste of our dishes is what attracts more and more clients to Plate.</p>
 				</div>
-				<div class="value_txt_content">
+				<div class="value-txt">
 					<h3><i class="fas fa-egg"></i>DIVERSE</h3>
 					<p>Our team regularly updates the menus to provide you with better food diversity whenever you order.</p>
 				</div>
 			</div>
-			<div class="value_pic">
-				<img src="/food/pic/home-01-382x375.png" alt="home01">
-				<img src="/food/pic/home-02-293x293.png" alt="home02">
-				<img src="/food/pic/home-03-461x407.png" alt="hone03">
-				<img src="/food/pic/home-04-191x191.png" alt="home04">
+			<div class="value-pic">
+				<img src="/pic/home-01-382x375.png" alt="home01">
+				<img src="/pic/home-02-293x293.png" alt="home02">
+				<img src="/pic/home-03-461x407.png" alt="hone03">
+				<img src="/pic/home-04-191x191.png" alt="home04">
 			</div>
-		</div>
-		<div class="client">
-			<div class="client_pic">
-				<img src="/food/pic/testimonials-01-179x179.png" alt="model1">
-				<img src="/food/pic/testimonials-02-306x306.png" alt="model2">
-				<img src="/food/pic/testimonials-03-179x179.png" alt="model3">
+		</section>
+		<section class="what-clients-say">
+			<div class="client-pic">
+				<img src="/pic/testimonials-01-179x179.png" alt="model1">
+				<img src="/pic/testimonials-02-306x306.png" alt="model2">
+				<img src="/pic/testimonials-03-179x179.png" alt="model3">
 			</div>
-			<div class="client_txt">
+			<div class="client-txt">
 				<h1>TESTIMONIALS</h1>
 				<h3>WHAT OUR CLIENTS SAY</h3>
-				<div class="client_message">
+				<div class="client-message">
 					<i class="fas fa-bookmark"></i>
 					<div>
 						<p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
 						<p>SOPHIE SMITH</p>
 					</div>
 				</div>
-				<div><a href="">SEND YOUR REVIEW</a></div>
+				<div>
+					<a href="">SEND YOUR REVIEW</a>
+				</div>
 			</div>
-		</div>
-		<div class="footer">
-			<div class="footer_title">
-				<img src="/food/pic/logo-default-269x100.png" alt="">
+		</section>
+		<section class="footer">
+			<div class="footer-head">
+				<div><img src="/pic/logo-default-269x100.png" alt=""></div>
 				<footer>© 2021 Plate. All Rights Reserved.</footer>
 			</div>
-			<div class="footer_body">
-				<div class="footer_content">
-					<p>CONTACTS</p>
-					<p>Ph.</p><a href="#">1-800-123-1234</a>
-					<p>Mail.</p><a href="#">Info@demolink.org</a>
-					<a href="">8439 Pierce Court Sacramento, CA 95820
-					</a>
+			<div class="footer-body">
+				<div class="footer-content">
+					<p class="content-title">CONTACTS</p>
+					<div class="contract-us">
+						<address>
+							<p>Ph.</p>
+							<p>Mail.</p>
+						</address>
+						<address>
+							<a href="#">1-800-123-1234</a>
+							<a href="#">Info@demolink.org</a>
+						</address>
+					</div>
+					<a href="#">8439 Pierce Court Sacramento, CA 95820</a>
 				</div>
-				<div class="footer_content">
-					<p>QUICK LINKS</p>
+				<div class="footer-content">
+					<p class="content-title">QUICK LINKS</p>
 					<a href="#">How It Works</a>
 					<a href="#">About</a>
 					<a href="#">Why Choose Us</a>
 				</div>
-				<div class="footer_content">
-					<p>FOOD PACKAGES</p>
+				<div class="footer-content">
+					<p class="content-title">FOOD PACKAGES</p>
 					<a href="#">Detox</a>
 					<a href="#">Balanced</a>
 					<a href="">Vegan</a>
@@ -248,8 +337,13 @@
 					<a href="#"><i class="fab fa-youtube"></i></a>
 				</div>
 			</div>
-		</div>
+		</section>
+	</div>
 
-	</section>
+
+
+
+
+
 </body>
 </html>

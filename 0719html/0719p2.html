@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			max-width: 1200px;
+			margin: auto;
+		}
+		.card{
+			border: 1px solid;
+			margin: 5px;
+			padding: 5px;
+		}
+		.card-pic img{
+			width: 100%;
+		}
+
+		@media screen and (min-width:756px){
+			.card{
+				display: flex;
+			}
+			.card-pic{
+				width: calc(100% / 2 - 8px);
+				padding: 2px;
+			}
+			.card-txt{
+				width: calc(100% / 2 - 8px);
+				padding: 2px;
+			}
+		}
+		@media screen and (min-width:1024px){
+			.card:nth-child(even){
+				flex-direction: row-reverse;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="wrap">
+		<div class="card">
+			<figure class="card-pic">
+				<img src="https://picsum.photos/300/200?random=15" alt="">
+			</figure>
+			<div class="card-txt">
+				<h3>title</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adi</p>
+			</div>
+		</div>
+		<div class="card">
+			<figure class="card-pic">
+				<img src="https://picsum.photos/300/200?random=15" alt="">
+			</figure>
+			<div class="card-txt">
+				<h3>title</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adi</p>
+			</div>
+		</div>
+		<div class="card">
+			<figure class="card-pic">
+				<img src="https://picsum.photos/300/200?random=15" alt="">
+			</figure>
+			<div class="card-txt">
+				<h3>title</h3>
+				<p>Lorem ipsum, dolor sit amet consectetur adi</p>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
