@@ -1,0 +1,55 @@
+body{
+	background-color: #eee;
+}
+.navbar{
+	padding: 20px;
+	position: sticky;
+	background-color: white;
+}
+.navbar a{
+	text-decoration: none;
+	color: black;
+}
+.navbar .home-logo a:hover,
+.navbar .nav-list a:hover{
+	color: red;
+}
+.navbar .home-logo{
+	display: flex;
+}
+.navbar .home-logo img{
+	width: 40px;
+}
+.navbar .home-logo h2{
+	display: inline;
+}
+.navbar .home-logo span{
+	font-size: 0;
+}
+.navbar ul{
+	display: flex;
+	list-style: none;
+	justify-content: flex-end;
+}
+.navbar ul span{
+	margin: 0 20px;
+	position: relative;
+	font-size: 0;
+}
+.navbar ul span::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -0.9rem;
+	transition: width 0.5s;
+}
+.navbar ul span:hover::after{
+	width: 100%;
+}
+.navbar ul i{
+	font-size: 25px;
+}

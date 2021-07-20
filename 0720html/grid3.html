@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			--col-gap: 15px;
+			max-width: 1200px;
+			margin: auto;
+		}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		[class*='col-']{
+			margin: 0 var(--col-gap);
+		}
+		.col-1{width: calc(100% / 1 - var(--col-gap)*2);}
+		.col-2{width: calc(100% / 6 - var(--col-gap)*2);}
+		.col-3{width: calc(100% / 4 - var(--col-gap)*2);}
+		.col-4{width: calc(100% / 3 - var(--col-gap)*2);}
+		.col-5{width: calc(100% / 12 * 5 - var(--col-gap)*2);}
+		.col-6{width: calc(100% / 2 - var(--col-gap)*2);}
+		.col-7{width: calc(100% / 12 * 7 - var(--col-gap)*2);}
+		.col-8{width: calc(100% / 12 * 8 - var(--col-gap)*2);}
+		.col-9{width: calc(100% / 12 * 9 - var(--col-gap)*2);}
+		.col-10{width: calc(100% / 12 * 10 - var(--col-gap)*2);}
+		.col-11{width: calc(100% / 12 * 11 - var(--col-gap)*2);}
+		.col-12{width: calc(100% - var(--col-gap)*2);}
+
+		@media screen and (min-width:768px){
+			.col-md-1{width: calc(100% / 1 - var(--col-gap)*2);}
+			.col-md-2{width: calc(100% / 6 - var(--col-gap)*2);}
+			.col-md-3{width: calc(100% / 4 - var(--col-gap)*2);}
+			.col-md-4{width: calc(100% / 3 - var(--col-gap)*2);}
+			.col-md-5{width: calc(100% / 12 * 5 - var(--col-gap)*2);}
+			.col-md-6{width: calc(100% / 2 - var(--col-gap)*2);}
+			.col-md-7{width: calc(100% / 12 * 7 - var(--col-gap)*2);}
+			.col-md-8{width: calc(100% / 12 * 8 - var(--col-gap)*2);}
+			.col-md-9{width: calc(100% / 12 * 9 - var(--col-gap)*2);}
+			.col-md-10{width: calc(100% / 12 * 10 - var(--col-gap)*2);}
+			.col-md-11{width: calc(100% / 12 * 11 - var(--col-gap)*2);}
+			.col-md-12{width: calc(100% - var(--col-gap)*2);}
+		}
+		@media screen and (min-width:1024px){
+			.col-lg-1{width: calc(100% / 1 - var(--col-gap)*2);}
+			.col-lg-2{width: calc(100% / 6 - var(--col-gap)*2);}
+			.col-lg-3{width: calc(100% / 4 - var(--col-gap)*2);}
+			.col-lg-4{width: calc(100% / 3 - var(--col-gap)*2);}
+			.col-lg-5{width: calc(100% / 12 * 5 - var(--col-gap)*2);}
+			.col-lg-6{width: calc(100% / 2 - var(--col-gap)*2);}
+			.col-lg-7{width: calc(100% / 12 * 7 - var(--col-gap)*2);}
+			.col-lg-8{width: calc(100% / 12 * 8 - var(--col-gap)*2);}
+			.col-lg-9{width: calc(100% / 12 * 9 - var(--col-gap)*2);}
+			.col-lg-10{width: calc(100% / 12 * 10 - var(--col-gap)*2);}
+			.col-lg-11{width: calc(100% / 12 * 11 - var(--col-gap)*2);}
+			.col-lg-12{width: calc(100% - var(--col-gap)*2);}
+		}
+		.item{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="item">
+						<h3>title</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repudiandae?</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item">
+						<div>
+							<img src="https://picsum.photos/300/200?random=10" alt="">
+						</div>
+						<div>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item">
+						<div>
+							<img src="https://picsum.photos/300/200?random=10" alt="">
+						</div>
+						<div>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item">
+						<div>
+							<img src="https://picsum.photos/300/200?random=10" alt="">
+						</div>
+						<div>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, fugit quo quidem nihil voluptate ad velit expedita ullam illo maxime consequuntur odit hic provident. Doloremque consectetur molestias dolorem quidem nulla?</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
