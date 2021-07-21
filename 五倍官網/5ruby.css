@@ -1,10 +1,18 @@
 body{
-	background-color: #eee;
+	/* background-color: #eee; */
 }
+p{
+	line-height: 1.5em;
+	padding: 0.5em 0;
+}
+/* header */
 .navbar{
 	padding: 20px;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	background-color: white;
+	z-index: 2;
+	box-shadow: 0 3px 10px #eee;
 }
 .navbar a{
 	text-decoration: none;
@@ -19,12 +27,13 @@ body{
 }
 .navbar .home-logo img{
 	width: 40px;
+	vertical-align: bottom;
 }
 .navbar .home-logo h2{
 	display: inline;
 }
-.navbar .home-logo span{
-	font-size: 0;
+.navbar .nav-list{
+	margin-right: 30px;
 }
 .navbar ul{
 	display: flex;
@@ -34,7 +43,6 @@ body{
 .navbar ul span{
 	margin: 0 20px;
 	position: relative;
-	font-size: 0;
 }
 .navbar ul span::after{
 	content: '';
@@ -44,7 +52,7 @@ body{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: -0.9rem;
+	bottom: -0.95rem;
 	transition: width 0.5s;
 }
 .navbar ul span:hover::after{
@@ -52,4 +60,254 @@ body{
 }
 .navbar ul i{
 	font-size: 25px;
+}
+
+/* banner */
+.banner{
+	background: center url('/五倍官網/pic/banner-home.jpeg');
+	clip-path: polygon(100% 0, 100% 85%, 33% 100%, 0 85%, 0 0);
+	height: 60vh;
+	background-size: cover;
+}
+.banner .row{
+	padding-top: 70px;
+	color: white;
+}
+.banner .item h1{
+	font-size: 50px;
+}
+.banner .item a,
+.report footer a{
+	display: inline-block;
+	margin-top: 50px;
+	padding: 15px 30px;
+	background-color: rgb(255, 20, 54);
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+}
+.banner .item a:hover,
+.report footer a:hover{
+	background-color: rgb(176, 26, 26);
+}
+
+/* about-us */
+.about-us{
+	text-align: center;
+	padding: 45px 0;
+}
+.about-us .about-us-title h2,
+.about-us .about-us-title span,
+.teacher .teacher-title h2,
+.teacher .teacher-title span,
+.report .report-title h2,
+.report .report-title span{
+	font-size: 25px;
+}
+.about-us .about-us-title h2,
+.teacher .teacher-title h2,
+.report .report-title h2{
+	padding: 1.5rem 0;
+}
+.about-us .about-us-title h2 span,
+.teacher .teacher-title h2 span,
+.report .report-title h2 span{
+	position: relative;
+	padding: 2rem 0;
+}
+.about-us .about-us-title h2 span::after,
+.teacher .teacher-title h2 span::after,
+.report .report-title h2 span::after{
+	display: inline-block;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	top: 4rem;
+	left: 0;
+}
+.about-us .about-us-content{
+	justify-content: center;
+}
+.about-us .about-us-card img{
+	max-width: 230px;
+	vertical-align: bottom;
+}
+.about-us .about-us-card h3{
+	padding: 20px 0;
+}
+.about-us .about-us-card p{
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+/* teacher */
+.teacher{
+	background-color: #eee;
+	clip-path: polygon(33% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
+	padding: 150px 0;
+}
+.teacher .teacher-card{
+	margin: 30px 0;
+}
+.teacher .teacher-card .card{
+	height: 100%;
+	background-color: white;
+	border-radius: 10px;
+	padding: 30px 40px;
+}
+.teacher .header{
+	align-items: center;
+	border-bottom: solid 1px #ddd;
+}
+.teacher .header .teacher-pic img{
+	width: 100%;
+	border-radius: 50%;
+}
+.teacher .header .teacher-name h3 span{
+	display: block;
+	padding: 15px 0;
+	position: relative;
+}
+.teacher .header .teacher-name h3 span:first-child:after{
+	display: inline-block;
+	content: '';
+	width: 12%;
+	height: 2px;
+	background-color: red;
+	position: absolute;
+	top: 2rem;
+	left: 0;
+}
+.teacher .header .teacher-name li{
+	display: inline-block;
+	padding: 10px 0;
+}
+.teacher .header .teacher-name li i{
+	color: #bbb;
+}
+.teacher .header .teacher-name li i:hover{
+	color: #555;
+}
+.teacher .main-content{
+	padding: 20px 0;
+}
+.teacher .main-content p,
+.teacher .class-link p{
+	font-size: 16px;
+	position: relative;
+}
+.teacher .class-link p::after{
+	content: '';
+	width: 85%;
+	height: 1px;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+}
+.teacher .main-content a{
+	text-decoration: none;
+	font-size: 16px;
+	color: red;
+}
+.teacher .main-content a:hover{
+	text-decoration: underline;
+}
+.teacher .class-link a{
+	display: inline-block;
+	font-size: 16px;
+	text-decoration: none;
+	color: red;
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 1px red;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+.teacher .class-link a:hover{
+	color: white;
+	background-color: red;
+}
+
+/* report */
+.report{
+	padding: 45px 0;
+}
+.report .report-title,
+.report footer{
+	text-align: center;
+}
+.report .report-main h4 a{
+	font-size: 25px;
+	text-decoration: none;
+	color: black;
+}
+.report .report-main h4 a:hover{
+	color: red;
+}
+
+
+
+
+
+
+
+
+/* md-768 */
+@media screen and (max-width:768px){
+}
+@media screen and (min-width:768px){
+	.banner{
+		clip-path: polygon(100% 0, 100% 75%, 33% 100%, 0 75%, 0 0);
+	}
+	.banner .row{
+		padding-top: 90px;
+	}
+	.about-us .about-us-title h2,
+	.about-us .about-us-title span,
+	.teacher .teacher-title h2,
+	.teacher .teacher-title span,
+	.report .report-title h2,
+	.report .report-title span{
+		font-size: 30px;
+	}
+	.teacher{
+		clip-path: polygon(33% 0, 100% 7%, 100% 100%, 0 100%, 0 7%);
+		padding-top: 200px;
+	}
+}
+/* lg-1024 */
+@media screen and (max-width:1024px){
+	.navbar ul span{
+		display: none;
+	}
+}
+@media screen and (min-width:1024px){
+	.navbar ul i{
+		display: none;
+	}
+	.banner .row{
+		padding-top: 110px;
+	}
+	.banner .banner-content{
+		max-width: 1024px;
+		margin: auto;
+	}
+	.teacher .teacher-title{
+		max-width: 940px;
+		margin: auto;
+		
+	}
+}
+/* xl-1200 */
+@media screen and (max-width:1200px){
+	.navbar .home-logo span{
+		display: none;
+	}
+}
+@media screen and (min-width:1200px){
+	.teacher{
+		clip-path: polygon(33% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+	}
 }

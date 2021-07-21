@@ -4,7 +4,7 @@
 }
 
 .container{
-	--grid-gap: 10px;
+	--grid-gap: 15px;
 	max-width: 1200px;
 	margin: auto;
 	padding-left: var(--grid-gap);

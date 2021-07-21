@@ -4,8 +4,8 @@
 	font-size: 20px;
 }
 .container{
-	--grid-gap:10px;
-	max-width: 1200px;
+	--grid-gap:15px;
+	max-width: 1440px;
 	margin: auto;
 	padding: 0 var(--grid-gap);
 }
@@ -17,8 +17,7 @@
 [class*='col-'],
 [class*='cols'] > *{
 	box-sizing: border-box;
-	padding: 0 var(--grid-gap);
-	margin-bottom: calc(var(--grid-gap) * 2);
+	padding: var(--grid-gap);
 }
 .col-1{ width: 8.333333%;}
 .col-2{ width: 16.666666%;}
