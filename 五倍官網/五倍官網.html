@@ -10,19 +10,29 @@
 	<link rel="stylesheet" href="5ruby.css">
 	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
 	<style>
-		.lesson{
-			background-color: rgb(37, 42, 54);
-			clip-path: polygon(0 10%, 33% 0, 100% 10%, 100% 90%, 66% 100%, 0 90%);
-			padding: 250px 0;
+		.student{
+			padding: 50px;
 		}
-		.lesson .hexagon-box{
-			height: 360px;
-			clip-path: polygon(0 20%, 66% 0, 100% 20%, 100% 80%, 33% 100%, 0 80%);
-			background-color: red;
+		.student .student-title{
+			text-align: center;
 		}
-		.lesson .lesson-card img{
-			width: 100%;
+		.student .student-content .item{
+			padding: 20px;
+			border: solid 1px;
+			border-radius: 15px;
 		}
+		.student .student-content p{
+			font-size: 16px;
+		}
+		.student .student-content .student-name{
+			display: flex;
+		}
+		.student .student-content img{
+			width: 40px;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+
 	</style>
 </head>
 <body>
@@ -31,7 +41,7 @@
 			<div class="col-8 col-md-3 col-lg-4">
 				<div class="item home-logo">
 					<a href="#" class="logo">
-						<img src="/五倍官網/pic/logo.svg" alt="logo">
+						<img src="/pic/logo.svg" alt="logo">
 						<h2>五倍紅寶石<span>・專業程式教育機構</span></h2>
 					</a>
 				</div>
@@ -123,374 +133,509 @@
 			</div>
 		</div>
 	</section>
-	<section class="teacher">
+	<div class="background">
+		<section class="teacher">
+			<div class="container">
+				<header class="row row-cols-1 teacher-title">
+					<div class="col">
+						<div class="item">
+							<h2><span>講師</span>陣容</h2>
+							<p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
+						</div>
+					</div>
+				</header>
+				<div class="row row-cols-1 row-cols-lg-2">
+					<div class="col teacher-card">
+						<div class="item card">
+							<div class="row header">
+								<div class="col-5 col-md-3">
+									<div class="item teacher-pic">
+										<img src="pic/amos.webp" alt="amos">
+									</div>
+								</div>
+								<div class="col-7 col-md-9">
+									<div class="item teacher-name">
+										<h3>
+											<span>HTML / CSS 講師</span>
+											<span>李建杭 (Amos Lee)</span>
+										</h3>
+										<ul class="social-list">
+											<li>
+												<a href="#">
+													<i class="fas fa-globe"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-youtube"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="main-content">
+								<p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
+								<p>2018 年成為<a href="#">Youtuber</a>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
+								<p><a href="#">iT 邦幫忙鐵人賽</a>連續三屆冠軍、連續兩屆優選，於 2020 出版「<a href="">都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a>」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
+							</div>
+							<footer class="class-link">
+								<p>講師其他課程</p>
+								<a href="#">網頁前端設計女性專班</a>
+								<a href="#">HTML 網頁設計新手村</a>
+							</footer>
+						</div>
+					</div>
+					<div class="col teacher-card">
+						<div class="item card">
+							<div class="row header">
+								<div class="col-5 col-md-3">
+									<div class="item teacher-pic">
+										<img src="pic/eddie.webp" alt="eddie">
+									</div>
+								</div>
+								<div class="col-7 col-md-9">
+									<div class="item teacher-name">
+										<h3>
+											<span>Ruby / Git 講師</span>
+											<span>高見龍 (Eddie Kao)</span>
+										</h3>
+										<ul class="social-list">
+											<li>
+												<a href="#">
+													<i class="fas fa-globe"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-github"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-youtube"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item main-content">
+								<p>五倍紅寶石程式資訊教育股份有限公司負責人，在國內外各大型技術研討會擔任講者，參與過日本 RubyKaigi、日本 Ruby World Conference、臺灣微軟 Azure Developer Day 、RubyConf Taiwan、JSDC、WebConf 等。有二十年程式開發經驗和十多年的教學經驗，在臺灣推廣 Ruby 及 Git 多年，在各大專院校與企業開課，深受學員喜愛。</p>
+								<p>雖非資訊本科系出身，但喜歡寫程式，而且希望可以寫一輩子程式的電腦阿宅。</p>
+								<p>著有「<a href="#">為你自己學 Git</a>」與「<a href="#">為你自己學 Ruby on Rails</a>」暢銷技術書。</p>
+							</div>
+							<footer class="item class-link">
+								<p>講師其他課程</p>
+								<a href="#">Ruby on Rails 實戰課程</a>
+								<a href="#">坐上 Git 時光機 - 版本控制</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-lg-2">
+					<div class="col teacher-card">
+						<div class="item card">
+							<div class="row header">
+								<div class="col-5 col-md-3">
+									<div class="item teacher-pic">
+										<img src="pic/Kuro.webp" alt="kuro">
+									</div>
+								</div>
+								<div class="col-7 col-md-9">
+									<div class="item teacher-name">
+										<h3>
+											<span>Vue / JavaScript 講師</span>
+											<span>許國政 (Kuro Hsu)
+											</span>
+										</h3>
+										<ul class="social-list">
+											<li>
+												<a href="#">
+													<i class="fas fa-globe"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-github"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="main-content">
+								<p>業界資深前端開發者，為臺灣各大型技術研討會 JSDC、WebConf、MOPCON、COSCUP 的知名講者。</p>
+								<p>於 2019 年出版「<a href="#">0 陷阱！0 誤解！8 天重新認識 JavaScript！</a>」，攻佔各大技術書籍排行榜。</p>
+								<p>同時身兼 Vue.js Taiwan 社群主辦人，主辦的活動場場秒殺一票難求，衍伸開發的週邊商品精緻實用，譽為被程式耽誤的週邊商品業者。</p>
+							</div>
+							<footer class="class-link">
+								<p>講師其他課程</p>
+								<a href="#">Vue.js 與 Vuex 前端開發實戰
+									</a>
+								<a href="#">JavaScript / jQuery 前端開發入門實戰</a>
+							</footer>
+						</div>
+					</div>
+					<div class="col teacher-card">
+						<div class="item card">
+							<div class="row header">
+								<div class="col-5 col-md-3">
+									<div class="item teacher-pic">
+										<img src="pic/milkmidi.webp" alt="milkmidi">
+									</div>
+								</div>
+								<div class="col-7 col-md-9">
+									<div class="item teacher-name">
+										<h3>
+											<span>React 講師</span>
+											<span>廖珀均 (奶綠茶)</span>
+										</h3>
+										<ul class="social-list">
+											<li>
+												<a href="#">
+													<i class="fas fa-globe"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-facebook"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-twitter"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-github"></i>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<i class="fab fa-youtube"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="item main-content">
+								<p>資深前端開發者與程式開發講師，授課資歷十年以上。</p>
+								<p>擅長 HTML、CSS、JavaScript、jQuery、Vue、React 開發應用與 Webpack 前端打包工具等，專修各種前端跨平台的疑難雜症。</p>
+								<p>另一個身份為花鬍子樂團吉他手，育有二貓，喜愛小酌。</p>
+							</div>
+							<footer class="item class-link">
+								<p>講師其他課程</p>
+								<a href="#">React 全攻略入門班</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="report">
+			<div class="container">
+				<div class="row row-cols-1">
+					<div class="col report-title">
+						<div class="item">
+							<h2>媒<span>體報</span>導</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 report-main">
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									想當高薪工程師 備妥三大關鍵能力求職更順暢
+								</a>
+							</h4>
+							<p>中時新聞網・2021/01</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！
+								</a>
+							</h4>
+							<p>EnglishOK・2020/03</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！
+								</a>
+							</h4>
+							<p>天下雜誌・2020/02</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職
+								</a>
+							</h4>
+							<p>天下雜誌・2020/01</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day
+								</a>
+							</h4>
+							<p>INSIDE・2019/07</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<h4>
+								<a href="#">
+									無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師
+								</a>
+							</h4>
+							<p>INSIDE・2019/01</p>
+						</div>
+					</div>
+				</div>
+				<footer class="row row-cols-1">
+					<div class="col">
+						<div class="item">
+							<a href="#">更多報導</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<section class="lesson">
+			<div class="container">
+				<div class="row lesson-title">
+					<div class="col-12 col-md-10 col-lg-5 left-title">
+						<div class="item">
+							<h2><span>短期</span>實體課程</h2>
+							<p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
+						</div>
+					</div>
+					<div class="col-10 col-lg-5 hexagon-box">
+						<div class="item">
+							<h3>後端課程</h3>
+							<p>專屬五倍的後端課程 Ruby on Rails ，一起踏入後端領域吧！</p>
+							<a href="#">前往課程 ></a>
+						</div>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+					<div class=" col lesson-card">
+						<a href="#">
+							<div class="item">
+								<img src="pic/Vue-js-Banner-600x315.webp" alt="vue-js">
+								<div>
+									<p>2021 / 7 月班</p>
+									<p>講師：許國政 (Kuro Hsu)
+										<span>進階課程</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col lesson-card">
+						<a href="#">
+							<div class="item">
+								<img src="pic/Ruby-Banner-600x315.webp" alt="ruby">
+								<div>
+									<p>2021 / 7 月班</p>
+									<p>講師：高見龍 (Eddie Kao)
+										<span>進階課程</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col lesson-card">
+						<a href="#">
+							<div class="item">
+								<img src="pic/Code-for-girl-Banner-600x315.webp" alt="code-for-girl">
+								<div>
+									<p>2021 / 10 月班</p>
+									<p>講師：李建杭 (Amos Lee)
+										<span>入門課程</span>
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<footer class="row row-cols-1">
+					<div class="col">
+						<div class="item">
+							<a href="#">看更多課程</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<section class="full-class">
+			<div class="container">
+				<header class="row row-cols-1 full-class-title">
+					<div class="col">
+						<div class="item">
+							<h2><span>掌握</span>自己的學習路徑</h2>
+							<p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
+						</div>
+					</div>
+				</header>
+				<div class="row row-cols-1 row-cols-lg-2">
+					<div class=" col full-class-card">
+						<a href="#">
+							<div class="item">
+								<div class="card-pic">
+									<p>I'm coding it!<br>微痛轉職工程師</p>
+								</div>
+								<div class="card-txt">
+									<p>線上課程</p>
+									<p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+									<a href="#"><span>前往課程></span></a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class=" col full-class-card">
+						<a href="#">
+							<div class="item">
+								<div class="card-pic">
+									<p>ASTRO Camp<br>全端工程師實戰訓練營</p>
+								</div>
+								<div class="card-txt">
+									<p>三個月實戰轉職全端工程師</p>
+									<p>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</p>
+									<a href="#"><span>前往課程></span></a>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<section class="student">
 		<div class="container">
-			<div class="row row-cols-1 teacher-title">
+			<div class="row row-cols-1 student-title">
+				<h2>在五倍，我<span>們一</span>起超越五倍</h2>
+			</div>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 student-content">
 				<div class="col">
 					<div class="item">
-						<h2><span>講師</span>陣容</h2>
-						<p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
+						<p>有貓 100 分，師資強大，有一線工程師的助教可以問到會為止，讓學習者可以少走很多冤枉路與減少模稜兩可、似是而非的觀念，讓程式寫法可以更貼近業界實務上的「慣例」。</p>
+						<div class="student-name">
+							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<p>林仁傑</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col teacher-card">
-					<div class="item card">
-						<div class="row header">
-							<div class="col-3">
-								<div class="item teacher-pic">
-									<img src="pic/amos.webp" alt="amos">
-								</div>
-							</div>
-							<div class="col-9">
-								<div class="item teacher-name">
-									<h3>
-										<span>HTML / CSS 講師</span>
-										<span>李建杭 (Amos Lee)</span>
-									</h3>
-									<ul class="social-list">
-										<li>
-											<a href="#">
-												<i class="fas fa-globe"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-facebook"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-youtube"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+				<div class="col">
+					<div class="item">
+						<p>本身是重度聽障朋友，也是後端工程師，一直希望有機會可以接觸到前端的世界，只是無論是買書籍自修，或是線上看影片學習，可惜都沒有字幕或是自己摸索也常常抓不住方向，好在五倍紅寶石的用心，不只是允許申請聽打員陪同學習，授課的老師們也都教得非常認真，也會時時注意同學的狀況，讓我在課堂中可以減少很多阻礙地同步學習，從 Vue.js 的觀念、實作，一路到繼續上 React.js 的觀念、實作，對於前端的世界也更能深入探索！</p>
+						<div class="student-name">
+							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<p>莊智偉</p>
 						</div>
-						<div class="main-content">
-							<p>從視覺設計轉職前端的斜槓開發者，活躍於臺灣各大技術研討會，熟稔 HTML & CSS、Bootstrap、RWD、CSS3 等，為國內知名前端技術講師。</p>
-							<p>2018 年成為<a href="#">Youtuber</a>，致力於使用簡單易懂的方式讓新手能夠輕鬆學習前端開發技能。</p>
-							<p><a href="#">iT 邦幫忙鐵人賽</a>連續三屆冠軍、連續兩屆優選，於 2020 出版「<a href="">都能懂的 CSS 選取器：金魚都能懂了你還怕學不會嗎（iT邦幫忙鐵人賽系列書）</a>」一書，除了熱衷於牛排的熟成，目前日益精進於釣魚技能。</p>
-						</div>
-						<footer class="class-link">
-							<p>講師其他課程</p>
-							<a href="#">網頁前端設計女性專班</a>
-							<a href="#">HTML 網頁設計新手村</a>
-						</footer>
 					</div>
 				</div>
-				<div class="col teacher-card">
-					<div class="item card">
-						<div class="row header">
-							<div class="col-3">
-								<div class="item teacher-pic">
-									<img src="pic/eddie.webp" alt="eddie">
-								</div>
-							</div>
-							<div class="col-9">
-								<div class="item teacher-name">
-									<h3>
-										<span>Ruby / Git 講師</span>
-										<span>高見龍 (Eddie Kao)</span>
-									</h3>
-									<ul class="social-list">
-										<li>
-											<a href="#">
-												<i class="fas fa-globe"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-facebook"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-github"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-youtube"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+				<div class="col">
+					<div class="item">
+						<p>五倍課程非常的扎實，而除了課程以外，有強大的助教群，有任何疑問的時候，助教都會協助我們去解決問題，雖然中間碰到許多挫折，但要相信自己，也相信五倍，只要不放棄，五倍會陪著我們走過這條艱難的路程。</p>
+						<div class="student-name">
+							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<p>陳哲昱</p>
 						</div>
-						<div class="item main-content">
-							<p>五倍紅寶石程式資訊教育股份有限公司負責人，在國內外各大型技術研討會擔任講者，參與過日本 RubyKaigi、日本 Ruby World Conference、臺灣微軟 Azure Developer Day 、RubyConf Taiwan、JSDC、WebConf 等。有二十年程式開發經驗和十多年的教學經驗，在臺灣推廣 Ruby 及 Git 多年，在各大專院校與企業開課，深受學員喜愛。</p>
-							<p>雖非資訊本科系出身，但喜歡寫程式，而且希望可以寫一輩子程式的電腦阿宅。</p>
-							<p>著有「<a href="#">為你自己學 Git</a>」與「<a href="#">為你自己學 Ruby on Rails</a>」暢銷技術書。</p>
-						</div>
-						<footer class="item class-link">
-							<p>講師其他課程</p>
-							<a href="#">Ruby on Rails 實戰課程</a>
-							<a href="#">坐上 Git 時光機 - 版本控制</a>
-						</footer>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col teacher-card">
-					<div class="item card">
-						<div class="row header">
-							<div class="col-3">
-								<div class="item teacher-pic">
-									<img src="pic/Kuro.webp" alt="kuro">
-								</div>
-							</div>
-							<div class="col-9">
-								<div class="item teacher-name">
-									<h3>
-										<span>Vue / JavaScript 講師</span>
-										<span>許國政 (Kuro Hsu)
-										</span>
-									</h3>
-									<ul class="social-list">
-										<li>
-											<a href="#">
-												<i class="fas fa-globe"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-facebook"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-github"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+				<div class="col">
+					<div class="item">
+						<p>老師跟課程助教都很有耐心協助解決學生的疑問，有興趣學寫程式的新手，會有不少收穫！</p>
+						<div class="student-name">
+							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<p>Jia Lun Li</p>
 						</div>
-						<div class="main-content">
-							<p>業界資深前端開發者，為臺灣各大型技術研討會 JSDC、WebConf、MOPCON、COSCUP 的知名講者。</p>
-							<p>於 2019 年出版「<a href="#">0 陷阱！0 誤解！8 天重新認識 JavaScript！</a>」，攻佔各大技術書籍排行榜。</p>
-							<p>同時身兼 Vue.js Taiwan 社群主辦人，主辦的活動場場秒殺一票難求，衍伸開發的週邊商品精緻實用，譽為被程式耽誤的週邊商品業者。</p>
-						</div>
-						<footer class="class-link">
-							<p>講師其他課程</p>
-							<a href="#">Vue.js 與 Vuex 前端開發實戰
-								</a>
-							<a href="#">JavaScript / jQuery 前端開發入門實戰</a>
-						</footer>
-					</div>
-				</div>
-				<div class="col teacher-card">
-					<div class="item card">
-						<div class="row header">
-							<div class="col-3">
-								<div class="item teacher-pic">
-									<img src="pic/milkmidi.webp" alt="milkmidi">
-								</div>
-							</div>
-							<div class="col-9">
-								<div class="item teacher-name">
-									<h3>
-										<span>React 講師</span>
-										<span>廖珀均 (奶綠茶)</span>
-									</h3>
-									<ul class="social-list">
-										<li>
-											<a href="#">
-												<i class="fas fa-globe"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-facebook"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-twitter"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-github"></i>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<i class="fab fa-youtube"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="item main-content">
-							<p>資深前端開發者與程式開發講師，授課資歷十年以上。</p>
-							<p>擅長 HTML、CSS、JavaScript、jQuery、Vue、React 開發應用與 Webpack 前端打包工具等，專修各種前端跨平台的疑難雜症。</p>
-							<p>另一個身份為花鬍子樂團吉他手，育有二貓，喜愛小酌。</p>
-						</div>
-						<footer class="item class-link">
-							<p>講師其他課程</p>
-							<a href="#">React 全攻略入門班</a>
-						</footer>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="report">
+	<article class="article">
 		<div class="container">
 			<div class="row row-cols-1">
-				<div class="col report-title">
+				<div class="col">
 					<div class="item">
-						<h2>媒<span>體報</span>導</h2>
+						<h2>精<span>選文</span>章</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-md-2 report-main">
+			<div class="row row-cols-1 row-cols-md-3">
 				<div class="col">
 					<div class="item">
-						<h4>
-							<a href="#">
-								想當高薪工程師 備妥三大關鍵能力求職更順暢
-							</a>
-						</h4>
-						<p>中時新聞網・2021/01</p>
+						<img src="/pic/Webpack-post.webp" alt="package">
+						<h3>從模組化帶你認識 Webpack</h3>
+						<p>By William・7月 20 2021・技術文章</p>
 					</div>
 				</div>
 				<div class="col">
 					<div class="item">
-						<h4>
-							<a href="#">
-								營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！
-							</a>
-						</h4>
-						<p>EnglishOK・2020/03</p>
+						<img src="/pic/LocalStorage-cover.webp" alt="local-storage">
+						<h3>認識瀏覽器的神秘儲存空間 - localStorage</h3>
+						<p>By 哲昱・7月 5 2021・技術文章</p>
 					</div>
 				</div>
 				<div class="col">
 					<div class="item">
-						<h4>
-							<a href="#">
-								教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！
-							</a>
-						</h4>
-						<p>天下雜誌・2020/02</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<h4>
-							<a href="#">
-								從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職
-							</a>
-						</h4>
-						<p>天下雜誌・2020/01</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<h4>
-							<a href="#">
-								勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day
-							</a>
-						</h4>
-						<p>INSIDE・2019/07</p>
-					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<h4>
-							<a href="#">
-								無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師
-							</a>
-						</h4>
-						<p>INSIDE・2019/01</p>
+						<img src="/pic/Rails-____________.webp" alt="blue">
+						<h3>用 Rails 串接藍新金流一點都不難！</h3>
+						<p>By Yuchan・6月 25 2021・技術文章</p>
 					</div>
 				</div>
 			</div>
-			<footer class="row row-cols-1">
+			<div class="row row-cols-1">
 				<div class="col">
 					<div class="item">
-						<a href="#">更多報導</a>
+						<a href="">更多文章</a>
 					</div>
 				</div>
-			</footer>
+			</div>
 		</div>
-	</section>
-	<section class="lesson">
-		<div class="container">
-			<div class="row row-cols-1 row-cols-md-2">
-				<div class="col">
-					<div class="item">
-						<h2><span>短期</span>實體課程</h2>
-						<p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
-					</div>
-				</div>
-				<div class="col hexagon-box">
-					<div class="item">
-						<h3>後端課程</h3>
-						<p>專屬五倍的後端課程 Ruby on Rails ，一起踏入後端領域吧！</p>
-					</div>
-				</div>
-			</div>
-			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-				<div class="col lesson-card">
-					<a href="#">
-						<div class="item">
-							<img src="pic/Vue-js-Banner-600x315.webp" alt="vue-js">
-							<p>2021 / 7 月班</p>
-							<p>講師：許國政 (Kuro Hsu)
-								<span>進階課程</span>
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="col lesson-card">
-					<a href="#">
-						<div class="item">
-							<img src="pic/Ruby-Banner-600x315.webp" alt="ruby">
-							<p>2021 / 7 月班</p>
-							<p>講師：高見龍 (Eddie Kao)
-								<span>進階課程</span>
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="col lesson-card">
-					<a href="#">
-						<div class="item">
-							<img src="pic/Code-for-girl-Banner-600x315.webp" alt="code-for-girl">
-							<p>2021 / 10 月班</p>
-							<p>講師：李建杭 (Amos Lee)
-								<span>入門課程</span>
-							</p>
-						</div>
-					</a>
-				</div>
-			</div>
-			<footer class="row row-cols-1">
-				<div class="col">
-					<div class="item">
-						<a href="#">看更多課程</a>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</section>
+	</article>
 
 </body>
 </html>

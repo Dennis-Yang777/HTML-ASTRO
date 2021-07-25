@@ -64,7 +64,7 @@ p{
 
 /* banner */
 .banner{
-	background: center url('/五倍官網/pic/banner-home.jpeg');
+	background: center url('/pic/banner-home.jpeg');
 	clip-path: polygon(100% 0, 100% 85%, 33% 100%, 0 85%, 0 0);
 	height: 60vh;
 	background-size: cover;
@@ -77,7 +77,8 @@ p{
 	font-size: 50px;
 }
 .banner .item a,
-.report footer a{
+.report footer a,
+.lesson footer a{
 	display: inline-block;
 	margin-top: 50px;
 	padding: 15px 30px;
@@ -87,7 +88,8 @@ p{
 	color: white;
 }
 .banner .item a:hover,
-.report footer a:hover{
+.report footer a:hover,
+.lesson footer a:hover{
 	background-color: rgb(176, 26, 26);
 }
 
@@ -101,23 +103,38 @@ p{
 .teacher .teacher-title h2,
 .teacher .teacher-title span,
 .report .report-title h2,
-.report .report-title span{
+.report .report-title span,
+.lesson .lesson-title h2,
+.lesson .lesson-title span,
+.full-class .full-class-title h2,
+.full-class .full-class-title span,
+.student .student-title h2,
+.student .student-title span{
 	font-size: 25px;
 }
 .about-us .about-us-title h2,
 .teacher .teacher-title h2,
-.report .report-title h2{
+.report .report-title h2,
+.lesson .lesson-title h2,
+.full-class .full-class-title h2,
+.student .student-title h2{
 	padding: 1.5rem 0;
 }
 .about-us .about-us-title h2 span,
 .teacher .teacher-title h2 span,
-.report .report-title h2 span{
+.report .report-title h2 span,
+.lesson .lesson-title h2 span,
+.full-class .full-class-title h2 span,
+.student .student-title h2 span{
 	position: relative;
 	padding: 2rem 0;
 }
 .about-us .about-us-title h2 span::after,
 .teacher .teacher-title h2 span::after,
-.report .report-title h2 span::after{
+.report .report-title h2 span::after,
+.lesson .lesson-title h2 span::after,
+.full-class .full-class-title h2 span::after,
+.student .student-title h2 span::after{
 	display: inline-block;
 	content: '';
 	width: 100%;
@@ -138,14 +155,16 @@ p{
 	padding: 20px 0;
 }
 .about-us .about-us-card p{
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.5em;
 }
 
+.background{
+	background-color: #eee;
+	clip-path: polygon(0 1%, 33% 0, 100% 1%, 100% 99%, 33% 100%, 0 99%);
+}
 /* teacher */
 .teacher{
-	background-color: #eee;
-	clip-path: polygon(33% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
 	padding: 150px 0;
 }
 .teacher .teacher-card{
@@ -160,15 +179,20 @@ p{
 .teacher .header{
 	align-items: center;
 	border-bottom: solid 1px #ddd;
+	flex-direction: column;
 }
 .teacher .header .teacher-pic img{
 	width: 100%;
 	border-radius: 50%;
+	vertical-align: bottom;
 }
 .teacher .header .teacher-name h3 span{
 	display: block;
 	padding: 15px 0;
 	position: relative;
+}
+.teacher .header .teacher-name h3 span:first-child{
+	font-size: 16px;
 }
 .teacher .header .teacher-name h3 span:first-child:after{
 	display: inline-block;
@@ -235,7 +259,8 @@ p{
 	padding: 45px 0;
 }
 .report .report-title,
-.report footer{
+.report footer,
+.lesson footer{
 	text-align: center;
 }
 .report .report-main h4 a{
@@ -245,6 +270,148 @@ p{
 }
 .report .report-main h4 a:hover{
 	color: red;
+}
+.report .report-main p{
+	font-size: 16px;
+	color: #777;
+}
+/* lesson */
+.lesson{
+	background-color: rgb(37, 42, 54);
+	clip-path: polygon(0 5%, 33% 0, 100% 5%, 100% 95%, 66% 100%, 0 95%);
+	padding: 150px 0;
+}
+.lesson .lesson-title{
+	justify-content: center;
+	padding-bottom: 100px;
+}
+.lesson .lesson-title h2{
+	color: white;
+}
+.lesson .lesson-title .left-title p{
+	color: #bbb;
+	font-size: 16px;
+}
+.lesson .hexagon-box{
+	height: 360px;
+	clip-path: polygon(0 20%, 66% 0, 100% 20%, 100% 80%, 33% 100%, 0 80%);
+	background-color: red;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 50px;
+}
+.lesson .hexagon-box .item{
+	margin: auto;
+	color: white;
+}
+.lesson .hexagon-box .item h3{
+	font-size: 25px;
+}
+.lesson .hexagon-box .item p{
+	font-size: 16px;
+}
+.lesson .hexagon-box .item a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+.lesson .lesson-card .item{
+	border-radius: 15px;
+	background-color: white;
+	position: relative;
+}
+.lesson .lesson-card .item:hover{
+	box-shadow: 0 10px 0 red;
+	bottom: 10px;
+}
+.lesson .lesson-card a,
+.full-class .full-class-card a{
+	text-decoration: none;
+	color: #777;
+}
+.lesson .lesson-card .item img,
+.full-class .full-class-card .item img{
+	width: 100%;
+	vertical-align: bottom;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.lesson .lesson-card .item div,
+.full-class .full-class-card .item div:nth-child(2){
+	padding: 10px 20px;
+}
+.lesson .lesson-card .item p,
+.full-class .full-class-card .item p{
+	font-size: 16px;
+	display: flex;
+}
+.lesson .lesson-card .item p:first-child{
+	display: inline-block;
+	border: solid 1px;
+	font-size: 12px;
+	padding: 0.3em;
+	border-radius: 5px;
+	margin-bottom: 1em;
+}
+.lesson .lesson-card .item p:nth-child(2){
+	border-top: solid 1px;
+}
+.lesson .lesson-card .item p span{
+	font-size: 16px;
+	margin-left: auto;
+}
+
+/* full-class */
+.full-class{
+	padding: 50px 0 200px;
+}
+.full-class .row:nth-child(2){
+	justify-content: center;
+}
+.full-class .full-class-card{
+	max-width: 580px;
+}
+.full-class .full-class-card .item{
+	border-radius: 15px;
+	position: relative;
+}
+.full-class .full-class-card .item:hover{
+	box-shadow: 0 10px 0 red;
+	bottom: 10px;
+}
+.full-class .full-class-card:nth-child(1) .item{
+	background-image: url(/pic/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png);
+}
+.full-class .full-class-card:nth-child(2) .item{
+	background-image: url(/pic/learning-astro_camp-64eb918a606cc2d3b75bae289447aee8.png);
+}
+.full-class .full-class-card .card-pic{
+	padding: 50px 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+}
+.full-class .full-class-card .item .card-pic p{
+	display: block;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+.full-class .full-class-card .card-txt{
+	background-color: white;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.full-class .full-class-card .card-txt p:first-child{
+	font-size: 20px;
+	border-bottom: solid 1px #ccc;
+}
+.full-class .full-class-card .card-txt span{
+	font-size: 16px;
+	color: red;
+}
+.full-class .full-class-card .card-txt span:hover{
+	text-decoration: underline;
 }
 
 
@@ -272,9 +439,11 @@ p{
 	.report .report-title span{
 		font-size: 30px;
 	}
-	.teacher{
-		clip-path: polygon(33% 0, 100% 7%, 100% 100%, 0 100%, 0 7%);
-		padding-top: 200px;
+	.background{
+		clip-path: polygon(0 2%, 33% 0, 100% 2%, 100% 98%, 33% 100%, 0 98%);
+	}
+	.teacher .header{
+		flex-direction: row;
 	}
 }
 /* lg-1024 */
@@ -294,10 +463,21 @@ p{
 		max-width: 1024px;
 		margin: auto;
 	}
+	.background{
+		background-color: #eee;
+		clip-path: polygon(0 3%, 33% 0, 100% 3%, 100% 97%, 33% 100%, 0 97%);
+	}
 	.teacher .teacher-title{
 		max-width: 940px;
 		margin: auto;
-		
+	}
+	.lesson{
+		clip-path: polygon(0 10%, 33% 0, 100% 10%, 100% 90%, 66% 100%, 0 90%);
+		padding: 250px 0;
+	}
+	.full-class .full-class-title{
+		max-width: 1160px;
+		margin: auto;
 	}
 }
 /* xl-1200 */
@@ -307,7 +487,4 @@ p{
 	}
 }
 @media screen and (min-width:1200px){
-	.teacher{
-		clip-path: polygon(33% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
-	}
 }
