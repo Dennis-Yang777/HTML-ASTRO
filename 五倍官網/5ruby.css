@@ -18,6 +18,10 @@ p{
 	text-decoration: none;
 	color: black;
 }
+/* .navbar input{
+	display: none;
+} */
+
 .navbar .home-logo a:hover,
 .navbar .nav-list a:hover{
 	color: red;
@@ -32,41 +36,16 @@ p{
 .navbar .home-logo h2{
 	display: inline;
 }
-.navbar .nav-list{
-	margin-right: 30px;
-}
-.navbar ul{
-	display: flex;
-	list-style: none;
-	justify-content: flex-end;
-}
-.navbar ul span{
-	margin: 0 20px;
-	position: relative;
-}
-.navbar ul span::after{
-	content: '';
-	width: 0;
-	height: 2px;
-	background-color: red;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -0.95rem;
-	transition: width 0.5s;
-}
-.navbar ul span:hover::after{
-	width: 100%;
-}
-.navbar ul i{
+
+.navbar .hanberger i{
 	font-size: 25px;
 }
 
 /* banner */
 .banner{
-	background: center url('/pic/banner-home.jpeg');
+	background: center url('pic/banner-home.jpeg');
 	clip-path: polygon(100% 0, 100% 85%, 33% 100%, 0 85%, 0 0);
-	height: 60vh;
+	height: 600px;
 	background-size: cover;
 }
 .banner .row{
@@ -78,7 +57,8 @@ p{
 }
 .banner .item a,
 .report footer a,
-.lesson footer a{
+.lesson footer a,
+.article footer a{
 	display: inline-block;
 	margin-top: 50px;
 	padding: 15px 30px;
@@ -89,7 +69,8 @@ p{
 }
 .banner .item a:hover,
 .report footer a:hover,
-.lesson footer a:hover{
+.lesson footer a:hover,
+.article footer a:hover{
 	background-color: rgb(176, 26, 26);
 }
 
@@ -109,7 +90,9 @@ p{
 .full-class .full-class-title h2,
 .full-class .full-class-title span,
 .student .student-title h2,
-.student .student-title span{
+.student .student-title span,
+.article .article-title h2,
+.article .article-title span{
 	font-size: 25px;
 }
 .about-us .about-us-title h2,
@@ -117,7 +100,8 @@ p{
 .report .report-title h2,
 .lesson .lesson-title h2,
 .full-class .full-class-title h2,
-.student .student-title h2{
+.student .student-title h2,
+.article .article-title h2{
 	padding: 1.5rem 0;
 }
 .about-us .about-us-title h2 span,
@@ -125,7 +109,8 @@ p{
 .report .report-title h2 span,
 .lesson .lesson-title h2 span,
 .full-class .full-class-title h2 span,
-.student .student-title h2 span{
+.student .student-title h2 span,
+.article .article-title h2 span{
 	position: relative;
 	padding: 2rem 0;
 }
@@ -134,7 +119,8 @@ p{
 .report .report-title h2 span::after,
 .lesson .lesson-title h2 span::after,
 .full-class .full-class-title h2 span::after,
-.student .student-title h2 span::after{
+.student .student-title h2 span::after,
+.article .article-title h2 span::after{
 	display: inline-block;
 	content: '';
 	width: 100%;
@@ -260,7 +246,10 @@ p{
 }
 .report .report-title,
 .report footer,
-.lesson footer{
+.lesson footer,
+.student .student-title,
+.article .article-title,
+.article footer{
 	text-align: center;
 }
 .report .report-main h4 a{
@@ -381,10 +370,10 @@ p{
 	bottom: 10px;
 }
 .full-class .full-class-card:nth-child(1) .item{
-	background-image: url(/pic/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png);
+	background-image: url(pic/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png);
 }
 .full-class .full-class-card:nth-child(2) .item{
-	background-image: url(/pic/learning-astro_camp-64eb918a606cc2d3b75bae289447aee8.png);
+	background-image: url(pic/learning-astro_camp-64eb918a606cc2d3b75bae289447aee8.png);
 }
 .full-class .full-class-card .card-pic{
 	padding: 50px 0;
@@ -414,6 +403,52 @@ p{
 	text-decoration: underline;
 }
 
+/* student */
+.student{
+	padding: 50px;
+}
+.student .student-content .item{
+	padding: 20px;
+	border: solid 1px;
+	border-radius: 15px;
+}
+.student .student-content p{
+	font-size: 16px;
+}
+.student .student-content .student-name{
+	display: flex;
+}
+.student .student-content img{
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* article */
+.article {
+	padding: 100px 0;
+}
+.article .article-content .item img{
+	vertical-align: bottom;
+	width: 100%;
+	height: 240px;
+	border-radius: 10px;
+}
+.article .article-content a{
+	text-decoration: none;
+	color: black;
+}
+.article .article-content .item h3{
+	font-size: 25px;
+	margin: 20px 0 5px;
+}
+.article .article-content .item:hover h3{
+	color: red;
+}
+.article .article-content .item p{
+	font-size: 12px;
+	color: #aaa;
+}
 
 
 
@@ -423,10 +458,30 @@ p{
 
 /* md-768 */
 @media screen and (max-width:768px){
+	.navbar .nav-list{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: column;
+		background-color: white;
+		width: 100%;
+	}
+	.navbar .nav-list li{
+		padding: 20px 0 20px 20px;
+	}
+	.navbar .nav-list a{
+		font-size: 25px;
+	}
+	#controller:checked ~ .nav-list{
+		background-color: red;
+	}
+	/* .navbar .hanberger i{
+		display: none;
+	} */
 }
 @media screen and (min-width:768px){
 	.banner{
-		clip-path: polygon(100% 0, 100% 75%, 33% 100%, 0 75%, 0 0);
+		clip-path: polygon(100% 0, 100% 85%, 33% 100%, 0 85%, 0 0);
 	}
 	.banner .row{
 		padding-top: 90px;
@@ -442,19 +497,52 @@ p{
 	.background{
 		clip-path: polygon(0 2%, 33% 0, 100% 2%, 100% 98%, 33% 100%, 0 98%);
 	}
+	.contact-us{
+		clip-path: polygon(33% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+	}
 	.teacher .header{
 		flex-direction: row;
 	}
 }
 /* lg-1024 */
 @media screen and (max-width:1024px){
-	.navbar ul span{
+	/* .navbar ul span{
 		display: none;
-	}
+	} */
 }
 @media screen and (min-width:1024px){
-	.navbar ul i{
+	.navbar .hanberger i{
 		display: none;
+	}
+	.navbar .nav-list{
+		margin-right: 30px;
+	}
+	.navbar ul{
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		justify-content: flex-end;
+	}
+	.navbar ul span{
+		margin: 0 20px;
+		position: relative;
+	}
+	.navbar ul span::after{
+		content: '';
+		width: 0;
+		height: 2px;
+		background-color: red;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -0.95rem;
+		transition: width 0.5s;
+	}
+	.navbar ul span:hover::after{
+		width: 100%;
+	}
+	.banner{
+		clip-path: polygon(100% 0, 100% 80%, 33% 100%, 0 80%, 0 0);
 	}
 	.banner .row{
 		padding-top: 110px;
@@ -478,6 +566,9 @@ p{
 	.full-class .full-class-title{
 		max-width: 1160px;
 		margin: auto;
+	}
+	.contact-us{
+		clip-path: polygon(33% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
 	}
 }
 /* xl-1200 */

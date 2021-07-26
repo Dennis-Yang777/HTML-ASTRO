@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="/grid拷貝.css">
+	<style>
+		.item{
+			width: 300px;
+			height: 300px;
+		}
+
+		@media screen and (max-width:767px){
+			.item{
+				display: none;
+			}
+			#check:checked ~ .item{
+				background-color: red;
+				display: block;
+			}
+		}
+		@media screen and (min-width:768px){
+			.item{
+				display: none;
+			}
+			#check:checked ~ .item{
+				background-color: blue;
+				display: block;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<label for="check">**點我**</label>
+				<input type="checkbox" id="check">
+				<div class="item"></div>
+				<div class="item"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

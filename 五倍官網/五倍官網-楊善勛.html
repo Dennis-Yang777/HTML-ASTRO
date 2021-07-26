@@ -10,43 +10,40 @@
 	<link rel="stylesheet" href="5ruby.css">
 	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
 	<style>
-		.student{
-			padding: 50px;
+		.contact-us{
+			background-color: rgb(37, 42, 54);
+			padding: 200px 0;
+			clip-path: polygon(33% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
 		}
-		.student .student-title{
-			text-align: center;
-		}
-		.student .student-content .item{
-			padding: 20px;
-			border: solid 1px;
-			border-radius: 15px;
-		}
-		.student .student-content p{
+		.contact-us .footer-content h4{
 			font-size: 16px;
+			color: white;
 		}
-		.student .student-content .student-name{
-			display: flex;
+		.contact-us .footer-content a{
+			display: block;
+			font-size: 13px;
+			text-decoration: none;
+			color: white;
+			padding: 10px 0;
 		}
-		.student .student-content img{
-			width: 40px;
-			border-radius: 50%;
-			margin-right: 10px;
+		.contact-us .footer-content a:hover{
+			color: red;
 		}
-
 	</style>
 </head>
 <body>
 	<header class="navbar">
+		<input type="checkbox" id="controller">
 		<div class="row">
 			<div class="col-8 col-md-3 col-lg-4">
 				<div class="item home-logo">
 					<a href="#" class="logo">
-						<img src="/pic/logo.svg" alt="logo">
+						<img src="pic/logo.svg" alt="logo">
 						<h2>五倍紅寶石<span>・專業程式教育機構</span></h2>
 					</a>
 				</div>
 			</div>
-			<div class="col-4 col-md-9 col-lg-8">
+			<div class="col-3 col-md-8">
 				<ul class="item nav-list">
 					<li>
 						<a href="#">
@@ -72,13 +69,15 @@
 						<a href="#">
 							<span>最新消息</span>
 						</a>
-					</li>
-					<li>
-						<a href="">
-							<i class="fas fa-bars"></i>
-						</a>
 					</li>					
 				</ul>
+			</div>
+			<div class="col-1 hanberger">
+				<div class="item">
+					<label for="controller">
+						<i class="fas fa-bars"></i>
+					</label>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -560,7 +559,7 @@
 					<div class="item">
 						<p>有貓 100 分，師資強大，有一線工程師的助教可以問到會為止，讓學習者可以少走很多冤枉路與減少模稜兩可、似是而非的觀念，讓程式寫法可以更貼近業界實務上的「慣例」。</p>
 						<div class="student-name">
-							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<img src="pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
 							<p>林仁傑</p>
 						</div>
 					</div>
@@ -569,7 +568,7 @@
 					<div class="item">
 						<p>本身是重度聽障朋友，也是後端工程師，一直希望有機會可以接觸到前端的世界，只是無論是買書籍自修，或是線上看影片學習，可惜都沒有字幕或是自己摸索也常常抓不住方向，好在五倍紅寶石的用心，不只是允許申請聽打員陪同學習，授課的老師們也都教得非常認真，也會時時注意同學的狀況，讓我在課堂中可以減少很多阻礙地同步學習，從 Vue.js 的觀念、實作，一路到繼續上 React.js 的觀念、實作，對於前端的世界也更能深入探索！</p>
 						<div class="student-name">
-							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<img src="pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
 							<p>莊智偉</p>
 						</div>
 					</div>
@@ -578,7 +577,7 @@
 					<div class="item">
 						<p>五倍課程非常的扎實，而除了課程以外，有強大的助教群，有任何疑問的時候，助教都會協助我們去解決問題，雖然中間碰到許多挫折，但要相信自己，也相信五倍，只要不放棄，五倍會陪著我們走過這條艱難的路程。</p>
 						<div class="student-name">
-							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<img src="pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
 							<p>陳哲昱</p>
 						</div>
 					</div>
@@ -587,7 +586,7 @@
 					<div class="item">
 						<p>老師跟課程助教都很有耐心協助解決學生的疑問，有興趣學寫程式的新手，會有不少收穫！</p>
 						<div class="student-name">
-							<img src="/pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
+							<img src="pic/avatar-default-a0ae7a293bf16749f628c1fb30d79b8e.jpeg" alt="icon">
 							<p>Jia Lun Li</p>
 						</div>
 					</div>
@@ -597,45 +596,94 @@
 	</section>
 	<article class="article">
 		<div class="container">
-			<div class="row row-cols-1">
+			<div class="row row-cols-1 article-title">
 				<div class="col">
 					<div class="item">
 						<h2>精<span>選文</span>章</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-md-3">
-				<div class="col">
-					<div class="item">
-						<img src="/pic/Webpack-post.webp" alt="package">
-						<h3>從模組化帶你認識 Webpack</h3>
-						<p>By William・7月 20 2021・技術文章</p>
+			<div class="row row-cols-1 row-cols-md-3 article-content">
+				<a href="#">
+					<div class="col">
+						<div class="item">
+							<img src="pic/Webpack-post.webp" alt="package">
+							<h3>從模組化帶你認識 Webpack</h3>
+							<p>By William・7月 20 2021・技術文章</p>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<img src="/pic/LocalStorage-cover.webp" alt="local-storage">
-						<h3>認識瀏覽器的神秘儲存空間 - localStorage</h3>
-						<p>By 哲昱・7月 5 2021・技術文章</p>
+				</a>
+				<a href="#">
+					<div class="col">
+						<div class="item">
+							<img src="pic/LocalStorage-cover.webp" alt="local-storage">
+							<h3>認識瀏覽器的神秘儲存空間 - localStorage</h3>
+							<p>By 哲昱・7月 5 2021・技術文章</p>
+						</div>
 					</div>
-				</div>
-				<div class="col">
-					<div class="item">
-						<img src="/pic/Rails-____________.webp" alt="blue">
-						<h3>用 Rails 串接藍新金流一點都不難！</h3>
-						<p>By Yuchan・6月 25 2021・技術文章</p>
+				</a>
+				<a href="#">
+					<div class="col">
+						<div class="item">
+							<img src="pic/Rails-____________.webp" alt="blue">
+							<h3>用 Rails 串接藍新金流一點都不難！</h3>
+							<p>By Yuchan・6月 25 2021・技術文章</p>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div>
-			<div class="row row-cols-1">
+			<footer class="row row-cols-1">
 				<div class="col">
 					<div class="item">
-						<a href="">更多文章</a>
+						<a href="#">更多文章</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</article>
+	<footer class="contact-us">
+		<div class="container">
+			<div class="row footer-content">
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="item">
+						<img src="pic/inverted_logo-dde38e95b20e76407a7ab3e7db2e1c64.svg" alt="invert-logo">
+						<a href="#">電話 | (02) 2331-5247</a>
+						<a href="#">信箱 | course@5xcampus.com</a>
+						<a href="#">地址 | 10046 台北市中正區衡陽路 7 號 5 樓</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-8">
+					<div class="item">
+						<div class="row row-cols-2 row-cols-md-3">
+							<div class="item">
+								<h4>專業課程</h4>
+								<a href="#">ASTRO Camp</a>
+								<a href="#">線上課程</a>
+								<a href="#">短期課程</a>
+							</div>
+							<div class="item">
+								<h4>關於我們</h4>
+								<a href="#">關於五倍紅寶石</a>
+								<a href="#">聯絡我們</a>
+								<a href="#">媒體報導</a>
+							</div>
+							<div class="item">
+								<h4>部落格</h4>
+								<a href="#">專欄文章</a>
+								<a href="#">最新消息</a>
+							</div>
+							<div class="item">
+								<h4>幫助與政策</h4>
+								<a href="#">常見問題</a>
+								<a href="#">隱私權政策</a>
+								<a href="#">服務條款</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</article>
+	</footer>
 
 </body>
 </html>
