@@ -10,30 +10,13 @@
 	<link rel="stylesheet" href="5ruby.css">
 	<script src="https://kit.fontawesome.com/daab108b9f.js" crossorigin="anonymous"></script>
 	<style>
-		.contact-us{
-			background-color: rgb(37, 42, 54);
-			padding: 200px 0;
-			clip-path: polygon(33% 0, 100% 8%, 100% 100%, 0 100%, 0 8%);
-		}
-		.contact-us .footer-content h4{
-			font-size: 16px;
-			color: white;
-		}
-		.contact-us .footer-content a{
-			display: block;
-			font-size: 13px;
-			text-decoration: none;
-			color: white;
-			padding: 10px 0;
-		}
-		.contact-us .footer-content a:hover{
-			color: red;
-		}
+
+
+
 	</style>
 </head>
 <body>
 	<header class="navbar">
-		<input type="checkbox" id="controller">
 		<div class="row">
 			<div class="col-8 col-md-3 col-lg-4">
 				<div class="item home-logo">
@@ -44,6 +27,7 @@
 				</div>
 			</div>
 			<div class="col-3 col-md-8">
+				<input type="checkbox" id="controller">
 				<ul class="item nav-list">
 					<li>
 						<a href="#">
@@ -295,8 +279,7 @@
 							</div>
 							<footer class="class-link">
 								<p>講師其他課程</p>
-								<a href="#">Vue.js 與 Vuex 前端開發實戰
-									</a>
+								<a href="#">Vue.js 與 Vuex 前端開發實戰</a>
 								<a href="#">JavaScript / jQuery 前端開發入門實戰</a>
 							</footer>
 						</div>
@@ -328,17 +311,7 @@
 											</li>
 											<li>
 												<a href="#">
-													<i class="fab fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
 													<i class="fab fa-github"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<i class="fab fa-youtube"></i>
 												</a>
 											</li>
 										</ul>
@@ -641,10 +614,10 @@
 			</footer>
 		</div>
 	</article>
-	<footer class="contact-us">
+	<section class="contact-us">
 		<div class="container">
 			<div class="row footer-content">
-				<div class="col-12 col-md-6 col-lg-4">
+				<div class="col-12 col-md-6 col-lg-5">
 					<div class="item">
 						<img src="pic/inverted_logo-dde38e95b20e76407a7ab3e7db2e1c64.svg" alt="invert-logo">
 						<a href="#">電話 | (02) 2331-5247</a>
@@ -652,7 +625,7 @@
 						<a href="#">地址 | 10046 台北市中正區衡陽路 7 號 5 樓</a>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-8">
+				<div class="col-12 col-md-6 col-lg-7">
 					<div class="item">
 						<div class="row row-cols-2 row-cols-md-3">
 							<div class="item">
@@ -682,8 +655,42 @@
 					</div>
 				</div>
 			</div>
+			<div class="row footer-icon">
+				<div class="col-12 col-md-8 col-lg-6">
+					<div class="item">
+						<ul class="footer-social-list">
+							<li>
+								<a href="#">
+									<i class="fas fa-globe"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-	</footer>
+	</section>
+	<footer class="end">© 2014 - 2021 五倍紅寶石程式資訊教育股份有限公司 (5xRuby Training Group CO., LTD) | 台北市短期補習班立案 第 7594 號</footer>
 
 </body>
 </html>

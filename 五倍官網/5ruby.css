@@ -18,10 +18,9 @@ p{
 	text-decoration: none;
 	color: black;
 }
-/* .navbar input{
+.navbar input{
 	display: none;
-} */
-
+}
 .navbar .home-logo a:hover,
 .navbar .nav-list a:hover{
 	color: red;
@@ -194,10 +193,12 @@ p{
 	display: inline-block;
 	padding: 10px 0;
 }
-.teacher .header .teacher-name li i{
+.teacher .header .teacher-name li i,
+.contact-us .footer-social-list li i{
 	color: #bbb;
 }
-.teacher .header .teacher-name li i:hover{
+.teacher .header .teacher-name li i:hover,
+.contact-us .footer-social-list li i:hover{
 	color: #555;
 }
 .teacher .main-content{
@@ -450,39 +451,51 @@ p{
 	color: #aaa;
 }
 
-
+/* contact-us */
+.contact-us{
+	background-color: rgb(37, 42, 54);
+	padding: 200px 0 50px;
+	clip-path: polygon(33% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+.contact-us .footer-content h4{
+	font-size: 18px;
+	color: white;
+}
+.contact-us .footer-content a{
+	display: block;
+	font-size: 15px;
+	text-decoration: none;
+	color: white;
+	padding: 10px 0;
+}
+.contact-us .footer-content a:hover{
+	color: red;
+}
+.contact-us .footer-social-list{
+	display: flex;
+	padding: 50px 0;
+}
+.contact-us .footer-social-list li{
+	display: block;
+	margin: auto;
+}
+.contact-us .footer-social-list li i{
+	font-size: 30px;
+}
+.end{
+	font-size: 15px;
+	text-align: center;
+	padding: 15px;
+	background-color: rgb(23, 28, 40);
+	color: #aaa;
+}
 
 
 
 
 
 /* md-768 */
-@media screen and (max-width:768px){
-	.navbar .nav-list{
-		position: absolute;
-		top: 100%;
-		left: 0;
-		flex-direction: column;
-		background-color: white;
-		width: 100%;
-	}
-	.navbar .nav-list li{
-		padding: 20px 0 20px 20px;
-	}
-	.navbar .nav-list a{
-		font-size: 25px;
-	}
-	#controller:checked ~ .nav-list{
-		background-color: red;
-	}
-	/* .navbar .hanberger i{
-		display: none;
-	} */
-}
 @media screen and (min-width:768px){
-	.banner{
-		clip-path: polygon(100% 0, 100% 85%, 33% 100%, 0 85%, 0 0);
-	}
 	.banner .row{
 		padding-top: 90px;
 	}
@@ -498,17 +511,34 @@ p{
 		clip-path: polygon(0 2%, 33% 0, 100% 2%, 100% 98%, 33% 100%, 0 98%);
 	}
 	.contact-us{
-		clip-path: polygon(33% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+		clip-path: polygon(33% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
 	}
 	.teacher .header{
 		flex-direction: row;
 	}
+	.contact-us .footer-icon{
+		justify-content: center;
+	}
 }
 /* lg-1024 */
 @media screen and (max-width:1024px){
-	/* .navbar ul span{
-		display: none;
-	} */
+	.navbar .nav-list{
+		position: absolute;
+		top: -500%;
+		left: 0;
+		flex-direction: column;
+		background-color: white;
+		width: 100%;
+	}
+	.navbar .nav-list li{
+		padding: 20px 0 20px 20px;
+	}
+	.navbar .nav-list a{
+		font-size: 25px;
+	}
+	#controller:checked ~ .nav-list{
+		top: 100%;
+	}
 }
 @media screen and (min-width:1024px){
 	.navbar .hanberger i{
@@ -576,6 +606,4 @@ p{
 	.navbar .home-logo span{
 		display: none;
 	}
-}
-@media screen and (min-width:1200px){
 }
